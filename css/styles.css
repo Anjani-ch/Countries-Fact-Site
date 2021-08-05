@@ -1,0 +1,82 @@
+:root {
+    --border-radius: 5px;
+}
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+body {
+    margin: 0;
+    background: var(--main-bg);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li span {
+    font-weight: 300;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.shadow {
+    box-shadow: 0px 0px 5px 2px var(--shadow);
+}
+
+header {
+    background: var(--element-bg);
+    border-bottom: 3px solid var(--shadow);
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div #toggle-theme {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header div #toggle-theme p {
+    margin-left: 5px;
+}
+
+@media(max-width: 1024px) {
+    .container {
+        width: 90%;
+    }   
+}
+
+@media(max-width: 420px) {
+    header div {
+        flex-direction: column;
+    }
+
+    header div #toggle-theme ion-icon {
+        font-size: 30px;
+    }
+}
+
+/* 
+- Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%)
+- Very Dark Blue (Dark Mode Background): hsl(207, 26%, 17%)
+- Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%)
+- Dark Gray (Light Mode Input): hsl(0, 0%, 52%)
+- Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)
+- White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%)
+*/

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <link id="theme-styles" rel="stylesheet" type="text/css" href="../css/light.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/singleCountry.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../js/singleCountry.js" type="text/javascript" defer></script>
+    <script src="../js/switchTheme.js" type="text/javascript" defer></script>
+    <title>Country Facts Site</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2>Where in the world?</h2>
+            <div id="toggle-theme">
+                <ion-icon name="moon-outline" id="toggle-icon"></ion-icon>
+                <p id="theme-mode">Dark Mode</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="../index.html">
+            <button class="shadow pointer">
+                <ion-icon name="arrow-back-outline"></ion-icon> Back
+            </button>
+        </a>
+    </div>
+
+    <main>
+        <div class="container">
+            <img src="" id="country-flag">
+            <div>
+                <h1 id="country-name"></h1>
+
+                <div id="lists">
+                    <ul id="list-1"></ul>
+                    <ul id="list-2"></ul>
+                </div>
+
+                <div id="border-countries">
+                    <h3>Border Countries:</h3>
+
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

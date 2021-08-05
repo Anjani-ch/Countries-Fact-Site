@@ -1,0 +1,12 @@
+{
+  "name": "countries_fact_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://anjani-ch.github.io/Countries_Fact_Site",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Anjani Pranav Reddy Chapparapu",
+  "license": "ISC"
+}

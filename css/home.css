@@ -1,0 +1,122 @@
+main div div {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main div div input {
+    outline: 0;
+    border: 0;
+}
+
+main div div input {
+    width: 350px;
+    background: var(--element-bg);
+}
+
+main div div input::placeholder {
+    color: var(--input-text-color);
+}
+
+main div div #filter {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+main div div #filter #selected ion-icon {
+    margin-left: 10px;
+}
+
+main div div input,
+main div div #filter #selected {
+    padding: 10px 20px;
+}
+
+main div div #filter #options {
+    position: absolute;
+    top: 60px;
+    display: none;
+    padding: 0px 15px;
+    width: 100%;
+    margin-top: 0px;
+    background: var(--element-bg);
+}
+
+main div div input,
+main div div #filter #selected,
+main div div #filter #options {
+    border-radius: var(--border-radius);
+}
+
+main div div #filter #selected,
+main div div #filter #options .option {
+    font-weight: 600;
+    font-size: .75rem;
+}
+
+main div #countries {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+}
+
+main div #countries .country {
+    border-radius: var(--border-radius);
+    background: var(--element-bg);
+}
+
+main div #countries .country img {
+    width: 100%;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+main div #countries .country div {
+    padding: 0px 25px;
+}
+
+main div #countries .country div h3 {
+    margin: 5px 0;
+}
+
+main div #countries .country div ul li {
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+main div #countries .country div ul li span {
+    font-weight: 300;
+}
+
+@media(max-width: 1024px) {
+    main div #countries {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width: 768px) {
+    main div #countries {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 570px) {
+    main div div input  {
+        width: 100%;
+    }
+
+    main div #countries {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    main div #countries .country div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

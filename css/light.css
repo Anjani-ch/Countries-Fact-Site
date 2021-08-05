@@ -1,0 +1,7 @@
+:root {
+    --shadow: rgb(190, 189, 189);
+    --element-bg: hsl(0, 0%, 100%);
+    --main-bg: hsl(0, 0%, 100%);
+    --text-color: hsl(200, 15%, 8%);
+    --input-text-color: hsl(0, 0%, 52%);
+}

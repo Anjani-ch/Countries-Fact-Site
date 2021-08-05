@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <link id="theme-styles" rel="stylesheet" type="text/css" href="css/light.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/index.js" type="text/javascript" defer></script>
+    <script src="js/switchTheme.js" type="text/javascript" defer></script>
+    <title>Country Facts Site</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2>Where in the world?</h2>
+            <div id="toggle-theme">
+                <ion-icon name="moon-outline" id="toggle-icon"></ion-icon>
+                <p id="theme-mode">Dark Mode</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div>
+                <input class="shadow" type="text" placeholder="Search for a country...">
+                <div id="filter">
+                    <div class="shadow pointer" id="selected">Filter by Region <ion-icon name="chevron-down-outline">
+                        </ion-icon>
+                    </div>
+                    <div class="shadow" id="options">
+                        <div class="option pointer">Africa</div>
+                        <div class="option pointer">Americas</div>
+                        <div class="option pointer">Asia</div>
+                        <div class="option pointer">Europe</div>
+                        <div class="option pointer">Oceania</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="countries"></div>
+        </div>
+    </main>
+</body>
+
+</html>

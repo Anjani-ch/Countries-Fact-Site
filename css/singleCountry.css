@@ -1,0 +1,107 @@
+a {
+    text-decoration: none;
+}
+
+a button {
+    padding: 10px 25px;
+    background: var(--element-bg);
+    border: 0;
+    outline: 0;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+}
+
+a button ion-icon {
+    margin-right: 5px;
+    font-size: 1rem;
+}
+
+main > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main div img {
+    display: inline-block;
+    width: 50%;
+    height: 350px;
+    border: 2px solid var(--shadow);
+}
+
+main div > div,
+main div > div h1 {
+    margin-left: 30px;
+} 
+
+main div div #lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+main div div #lists ul li {
+    font-weight: 800;
+    margin: 10px;
+}
+
+main div div #border-countries {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main div div #border-countries * {
+    margin: 0;
+}
+
+main div div #border-countries h4 {
+    justify-content: flex-start;
+    margin: 0px 10px 5px 0px;
+}
+
+main div div #border-countries div .border-country {
+    padding: 5px 20px;
+    margin: 5px 10px 5px 0px;
+    border-radius: var(--border-radius);
+    display: inline-block;
+}
+
+@media(max-width: 768px) {
+    main > div {
+        flex-direction: column;
+    }
+
+    main div > div,
+    main div > div h1 {
+        margin-left: 0px;
+    } 
+
+    main div img {
+        width: 100%;
+        height: 100%;
+    }
+
+    main div div #lists {
+        flex-direction: column;
+    }
+
+    main div div #lists ul li {
+        margin: 10px 0;
+    }
+
+    main div div #border-countries {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main div div #border-countries div .border-country {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+}

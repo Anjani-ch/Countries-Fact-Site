@@ -8,5 +8,8 @@
     "deploy": "gh-pages -d dist"
   },
   "author": "Anjani Pranav Reddy Chapparapu",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }

@@ -85,15 +85,6 @@ main div #countries .country div h3 {
     margin: 5px 0;
 }
 
-main div #countries .country div ul li {
-    font-weight: 600;
-    margin: 10px 0;
-}
-
-main div #countries .country div ul li span {
-    font-weight: 300;
-}
-
 @media(max-width: 1024px) {
     main div #countries {
         grid-template-columns: repeat(3, 1fr);

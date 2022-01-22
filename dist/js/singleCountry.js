@@ -18,8 +18,6 @@ window.addEventListener('DOMContentLoaded', async () => {
     let currencies = '';
     let languages = '';
 
-    console.log(country)
-
     if (country.borders) {
         country.borders.forEach(borderCountryCode => borderCountries.push(fetch('https://restcountries.com/v3.1/alpha/' + borderCountryCode)
             .then(res => res.json())
